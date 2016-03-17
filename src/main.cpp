@@ -8,7 +8,7 @@
 #include "Stage.h"
 #include "DebugActor.h"
 
-#include "example.h"
+#include "oxygine-chess.h"
 
 
 using namespace oxygine;
@@ -18,7 +18,7 @@ using namespace oxygine;
 int mainloop()
 {
     // It gets passed to our example game implementation
-    example_update();
+    chess_update();
 
     // Update our stage
     // Update all actors. Actor::update will also be called for all its children
@@ -59,7 +59,7 @@ void run()
 #endif
 
 
-    example_preinit();
+    chess_preinit();
     core::init(&desc);
 
 
@@ -72,7 +72,7 @@ void run()
     DebugActor::show();
 
     // Initializes our example game. See example.cpp
-    example_init();
+    chess_init();
 
 #ifdef EMSCRIPTEN
     /*
@@ -104,7 +104,7 @@ void run()
     */
 
     // See example.cpp for the shutdown function implementation
-    example_destroy();
+    chess_destroy();
 
 
     //renderer.cleanup();

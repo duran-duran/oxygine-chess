@@ -1,11 +1,11 @@
 #pragma once
 
-class Piece;
+#include "Piece.h"
 
 struct Cell
 {
 	Point pos;
-	Piece* piece;
+	spPiece piece;
 };
 
 
@@ -22,8 +22,11 @@ public:
 private:
 	void clicked(Event* event);
 
-	void putPieces();
+	Cell* getCell(const Point& pos);
+
+	void resetPieces();
 
 	spSprite			_view;
 	std::vector<Cell>	_cells;
+	Cell*				_selected;
 };

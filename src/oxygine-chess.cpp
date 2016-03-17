@@ -1,13 +1,14 @@
 #include "shared.h"
 
+#include "oxygine-chess.h"
 #include "Chessboard.h"
 
 Chessboard board;
 
-void example_preinit() {}
+void chess_preinit() {}
 
 //called from main.cpp
-void example_init()
+void chess_init()
 {
     //load xml file with resources definition
     res.loadXML("res.xml");
@@ -21,12 +22,12 @@ void example_init()
 
 
 //called each frame from main.cpp
-void example_update()
+void chess_update()
 {
 }
 
 //called each frame from main.cpp
-void example_destroy()
+void chess_destroy()
 {
     //free previously loaded resources
     res.free();

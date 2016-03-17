@@ -111,17 +111,20 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="../src/example.cpp" />
+    <ClCompile Include="..\src\Chessboard.cpp" />
+    <ClCompile Include="..\src\oxygine-chess.cpp" />
     <ClCompile Include="../src/main.cpp" />
-    <ClCompile Include="..\src\chessboard.cpp" />
     <ClCompile Include="..\src\Piece.cpp" />
     <ClCompile Include="..\src\shared.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="../src/example.h" />
+    <ClInclude Include="..\src\oxygine-chess.h" />
     <ClInclude Include="..\src\Chessboard.h" />
     <ClInclude Include="..\src\Piece.h" />
     <ClInclude Include="..\src\shared.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\data\res.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
