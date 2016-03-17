@@ -1,0 +1,61 @@
+#temporary oxygine files
+data-ram/
+
+#builded dll's for visual studio project (won't ignore it for awhile)
+#/*.dll
+
+#build files for android//visual studio
+proj.android/obj/
+proj.android/out/
+proj.android/bin/
+proj.android/libs/
+proj.android/gen/
+
+#build files for emscripten
+proj.emscripten/build/
+proj.emscripten/build_release/
+proj.emscripten/data.js
+
+#build files for marmalade
+proj.marmalade/build_*
+
+#build files for cmake
+proj.cmake/build/
+
+#build files for MS Visual Studio
+proj.win32/Debug_*/
+proj.win32/Release_*/
+
+#some Visual Studio solution files
+*.suo
+proj.win32/ipch/
+
+#another bunch of IDE files
+.idea
+
+#dunno what this is for, took it from framework .gitignore file
+build-proj*
+ident.free
+*.orig
+.gradle/
+xcuserdata
+contents.xcworkspacedata
+*.xcscmblueprint
+temp/
+build_helloworld_*
+*.exp
+*.pdb
+*/Debug_v*
+build
+.DS_Store
+*.pyc
+*.opensdf
+*.sdf
+
+
+
+
+
+
+
+
