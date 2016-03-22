@@ -1,34 +1,14 @@
 #temporary oxygine files
 data-ram/
 
-#builded dll's for visual studio project (won't ignore it for awhile)
-#/*.dll
+#builded dll's for visual studio project
+data/*.dll
 
-#build files for android//visual studio
-proj.android/obj/
-proj.android/out/
-proj.android/bin/
-proj.android/libs/
-proj.android/gen/
-
-#build files for emscripten
-proj.emscripten/build/
-proj.emscripten/build_release/
-proj.emscripten/data.js
-
-#build files for marmalade
-proj.marmalade/build_*
-
-#build files for cmake
-proj.cmake/build/
-
-#build files for MS Visual Studio
-proj.win32/Debug_*/
-proj.win32/Release_*/
+#all project files
+proj*/
 
 #some Visual Studio solution files
 *.suo
-proj.win32/ipch/
 
 #another bunch of IDE files
 .idea

@@ -146,6 +146,7 @@ void Chessboard::clicked(Event* event)
 				spTween remove_tween = cell_p->piece->remove();
 			}
 
+			//Possible memory leak? 
 			cell_p->piece = _selected->piece;
 			_selected->piece = nullptr;
 			//--------------------------------------------------------
@@ -155,6 +156,7 @@ void Chessboard::clicked(Event* event)
 	}
 	else
 	{
+		//!!!!!!!!!!!! Bug: allows clicking on empty cell
 		_selected = cell_p;
 		if (cell_p)
 			cell_p->piece->select();
